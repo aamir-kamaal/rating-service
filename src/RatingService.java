@@ -21,6 +21,13 @@ public class RatingService {
         surveyImplementation.addOption(4,"Good",4,false);
         surveyImplementation.addOption(5,"VeryGood",5,false);
 
+        //Admin can remove questions added
+        surveyImplementation.removeAllQuestion();
+
+        //Admin can can view survey response
+
+
+
 
         surveyImplementation.generateSurvey(surveyImplementation.getQuestionSet(),surveyImplementation.getOptionSet());
 

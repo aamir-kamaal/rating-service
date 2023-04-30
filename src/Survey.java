@@ -4,9 +4,6 @@ import java.util.Set;
 
 public class Survey {
 
-    Question question;
-    Option option;
-
     Map<Question,Set<Option>> survey;
 
 

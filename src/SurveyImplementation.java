@@ -15,6 +15,23 @@ public class SurveyImplementation {
 
     }
 
+    public void removeAllQuestion()
+    {
+        if(questionSet.isEmpty())
+            System.out.println("All questions cleared from survey");
+    }
+
+    public void removeQuestion(int id)
+    {
+        Iterator i = questionSet.iterator();
+        while (i.hasNext())
+        {
+            Question q = (Question) i.next();
+            if(q.getQuesId() == id)
+                i.remove();
+        }
+    }
+
     public Set<Question> getQuestionSet()
     {
         return questionSet;
